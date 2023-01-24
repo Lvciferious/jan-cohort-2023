@@ -17,7 +17,6 @@ Hint: Remember the String.includes method!
 
 function pigLatin(word) {
     let vowels = 'aeiou'
-    let consonants = 'bcdfghjklmnpqrstvwxyz'
     if (vowels.includes(word[0])) {
     return word + 'yay';
     }
