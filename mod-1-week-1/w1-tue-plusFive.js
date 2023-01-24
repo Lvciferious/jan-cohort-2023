@@ -9,7 +9,7 @@ as an argument and returns the sum of that number and 5.
 function plusFive(num) {
     let sum = num + 5;
     console.log(sum);
-    return sum;
+    return num;
   }
 
 
