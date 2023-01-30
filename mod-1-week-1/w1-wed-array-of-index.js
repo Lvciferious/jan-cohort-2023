@@ -13,7 +13,7 @@ and returns a boolean that returns true if that string is located inside of the 
 or false if it does not.
 
 */
-
+/*
 function withinArray(array, word) {
 
     let wordIndex = array.indexOf(word);
@@ -25,5 +25,24 @@ function withinArray(array, word) {
 
     console.log(withinArray(["apple", "banana", "caramel", "chocolate"], "apple")); //=> true
     console.log(withinArray(["dog", "cat", "camel", "bird"], "camel")); //=> true
+    console.log(withinArray(["apple", "banana", "caramel", "chocolate"], "pineapple")); //=> false
+    console.log(withinArray(["dog", "cat", "camel", "bird"], "panther")); //=> false
+*/
+
+
+function withinArray(array, word) {
+    let wordIndex = array.indexOf(word);
+    for (let i = 0; i < array.length; i++) {
+     if (wordIndex === -1) {
+        return false;
+    }
+    else if (wordIndex !== -1) {
+        return true;
+    }
+}
+}
+
+    console.log(withinArray(["apple", "banana", "caramel", "chocolate"], "apple")); //=> true
+    console.log(withinArray(["dog", "cat", "camel", "bird"], "Camel")); //=> true
     console.log(withinArray(["apple", "banana", "caramel", "chocolate"], "pineapple")); //=> false
     console.log(withinArray(["dog", "cat", "camel", "bird"], "panther")); //=> false
