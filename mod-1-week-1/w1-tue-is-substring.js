@@ -33,3 +33,5 @@ function isSubstring(searchString, subString) {
   console.log(isSubstring("The cat went to the store", "he cat went")); // => true
   console.log(isSubstring("Time to program", "time")); // => true
   console.log(isSubstring("Jump for joy", "joys")); // => false
+  console.log(isSubstring("i like pie", "waffles")); //false
+  console.log(isSubstring("I love you, Hoseok!", "i love you")); //true if uppercase, false if lower
