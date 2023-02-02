@@ -24,25 +24,25 @@ This problem is worth 5 points. It is possible to get partial points on this pro
 
 //GAMEPLAN
 //non-tech solution:
-// take the word "foo" and alter it.
+//take the word "foo" and alter it.
 //Capitalise
 //all caps
 //double the word
 //reverse it (spell it backwards)
-//leave it alon
+//leave it alone
 //tech solution:
 //use if condtionals and string methods to alter "foo"
 //tie the if conditonals to an operation
-//make sure code is not too specific; it must work outside of specific param conditions
+//make sure code is not too specific; it must work outside of specific param conditions ('i.e. can work with any word')
 
 
 function stringChanger(word, operation) {
-    let capOne = word.charAt(0).toUpperCase();
-    let capTwo = capOne + word.slice(1);
+    const capOne = word.charAt(0).toUpperCase();
+    const capTwo = capOne + word.slice(1);
 
-    let upper = word.toUpperCase();
-    let doubler = word + word;
-    let rev = word.split('').reverse().join('');
+    const upper = word.toUpperCase();
+    const doubler = word + word;
+    const rev = word.split('').reverse().join('');
 
     if (operation === "capitalize") return capTwo;
     if (operation === "uppercase") return upper;
