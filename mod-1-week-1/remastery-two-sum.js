@@ -19,7 +19,7 @@ You can assume that input array contains only unique numbers.
 //if conditionals
 //operation to add numbers
 //nested loops for array, I believe
-//maybe helper func? no, something else I DUNNO WHAT ELSE TO DO IT'S WEIRD
+//maybe helper func? no, not needed
 // your code here
 
 

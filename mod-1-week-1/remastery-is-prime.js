@@ -16,14 +16,14 @@ Is Prime
 //if conditional is needed
 //operation must be tied in with conditional
 //return true if prime, return false if not
-//it can't just be an odd num. It must be prime.
+//it can't just be an odd num, as odd numbers can have multiple divisors. It must be prime.
 //edgecase of 1.
 
 function isPrime(number) {
     if (number < 2) return false;
 
     for (let i = 2; i < number; i++) { //remember to leave .length out, since we're iterating numbers, not a string or array
-        if ( number % i === 0) return false;
+        if (number % i === 0) return false;
     }
     return true;
 }
